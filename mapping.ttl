@@ -1,0 +1,68 @@
+PREFIX rr: <http://www.w3.org/ns/r2rml#> 
+PREFIX ex: <http://example.com/ns#> 
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<http://example.com/ns#TriplesMap1>
+    a rr:TriplesMap;
+
+    rr:subjectMap 
+    [ 
+      rr:template "http://example.com/voertuig/{kenteken}";
+      rr:class ex:Voertuig ;
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate rdf:type;
+      rr:objectMap [ rr:template "http://example.com/ns#voertuigtype/{voertuigsoort}" ];
+    ];
+
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:kenteken;
+      rr:objectMap [ rr:column "kenteken" ];
+    ];
+
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:merk;
+      rr:objectMap [ rr:column "merk" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:model;
+      rr:objectMap [ rr:column "handelsbenaming" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:vervalDatumApk;
+      rr:objectMap [ rr:column "vervaldatum_apk" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:datumTeNaamstelling;
+      rr:objectMap [ rr:column "datum_tenaamstelling" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:inrichting;
+      rr:objectMap [ rr:column "inrichting" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:aantalZitPlaatsen;
+      rr:objectMap [ rr:column "aantal_zitplaatsen" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:kleur;
+      rr:objectMap [ rr:column "eerste_kleur" ];
+    ];
+.
