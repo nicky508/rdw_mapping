@@ -20,7 +20,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     
     rr:predicateObjectMap
     [
-      rr:predicate rdf:type;
+      rr:predicate ex:voertuigType;
       rr:objectMap [ rr:template "http://example.com/ns#voertuigtype/{voertuigsoort}" ];
     ];
 
@@ -30,45 +30,4 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       rr:objectMap [ rr:column "kenteken" ];
     ];
 
-    rr:predicateObjectMap
-    [
-      rr:predicate ex:merk;
-      rr:objectMap [ rr:column "merk" ];
-    ];
-    
-    rr:predicateObjectMap
-    [
-      rr:predicate ex:model;
-      rr:objectMap [ rr:column "handelsbenaming" ];
-    ];
-    
-    rr:predicateObjectMap
-    [
-      rr:predicate ex:vervalDatumApk;
-      rr:objectMap [ rr:column "vervaldatum_apk" ];
-    ];
-    
-    rr:predicateObjectMap
-    [
-      rr:predicate ex:datumTeNaamstelling;
-      rr:objectMap [ rr:column "datum_tenaamstelling" ];
-    ];
-    
-    rr:predicateObjectMap
-    [
-      rr:predicate ex:inrichting;
-      rr:objectMap [ rr:column "inrichting" ];
-    ];
-    
-    rr:predicateObjectMap
-    [
-      rr:predicate ex:aantalZitPlaatsen;
-      rr:objectMap [ rr:column "aantal_zitplaatsen" ];
-    ];
-    
-    rr:predicateObjectMap
-    [
-      rr:predicate ex:kleur;
-      rr:objectMap [ rr:column "eerste_kleur" ];
-    ];
 .
