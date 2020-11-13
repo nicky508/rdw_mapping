@@ -9,7 +9,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a rr:TriplesMap;
 
     rml:logicalSource [
-	rml:referenceFormulation ql:CSV ;
+        rml:referenceFormulation ql:CSV ;
     ];
 
     rr:subjectMap 
@@ -27,7 +27,48 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rr:predicateObjectMap
     [
       rr:predicate ex:kenteken;
-      rr:objectMap [ rr:column "kenteken" ];
+      rr:objectMap [ rml:reference "kenteken" ];
     ];
 
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:merk;
+      rr:objectMap [ rml:reference "merk" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:model;
+      rr:objectMap [ rml:reference "handelsbenaming" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:vervalDatumApk;
+      rr:objectMap [ rml:reference "vervaldatum_apk" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:datumTeNaamstelling;
+      rr:objectMap [ rml:reference "datum_tenaamstelling" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:inrichting;
+      rr:objectMap [ rml:reference "inrichting" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:aantalZitPlaatsen;
+      rr:objectMap [ rml:reference "aantal_zitplaatsen" ];
+    ];
+    
+    rr:predicateObjectMap
+    [
+      rr:predicate ex:kleur;
+      rr:objectMap [ rml:reference "eerste_kleur" ];
+    ];
 .
