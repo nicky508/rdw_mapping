@@ -7,9 +7,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a rr:TriplesMap;
 
     rml:logicalSource [
-	    rml:source [
-		rml:referenceFormulation ql:CSV ;
-	];
+	rml:referenceFormulation ql:CSV ;
+    ];
 
     rr:subjectMap 
     [ 
